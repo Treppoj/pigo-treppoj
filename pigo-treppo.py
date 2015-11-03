@@ -5,8 +5,11 @@ __author__ = 'John'
 
 class Pigo:
 
-    isMoving = False
-    servoPos = 90
+    ########                          ########
+    ######## BASIC STATUS AND METHODS ########
+    ########                          ########
+
+    status = {'ismoving': False, 'servo': 90, 'leftspeed': 200, 'rightspeed': 200}
 
     def __init__(self):
         print "Wassup boy, I'm Brover, BBBOOOOOOYYYYYY. beep beep."
@@ -22,6 +25,16 @@ class Pigo:
         while fwd() != 1:
             time.sleep(.1)
             print "Yo, G. I tore my ACL, I'm out for dat season doe"
+
+    ########                             ########
+    ######## ADVANCED STATUS AND METHODS ########
+    ########                             ########
+
+########                      ########
+######## MAIN APP STARTS HERE ########
+########                      ########
+
+
 
 
 brover = Pigo()
