@@ -1,3 +1,6 @@
+#GOPIGO AUTNOMIS, ININSTAITED CLASS
+#GopiGO methods at
+
 from gopigo import *
 import time
 STOP_DIST = 50
@@ -34,8 +37,13 @@ class Pigo:
         for x in range(5):
             bwd()
 
+    #check if conditions are safe to continue operating
     def keepGoing(self):
         if self.status['dist'] < STOP_DIST:
+            print "Obstacle is ahead, booooyyy"
+            return False
+        elif volt() > 14 or volt() < 6:
+            print "My voltage is threatening to my life dog, its at: " + str(volt())
             return False
         else:
             return True
