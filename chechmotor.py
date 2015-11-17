@@ -8,3 +8,7 @@ def checkMotor():
         v = volt()
         print v
 
+
+checkMotor()
+
+
