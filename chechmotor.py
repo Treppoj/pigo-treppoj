@@ -1,9 +1,10 @@
 from gopigo import *
 
 
-def checkMotor(self):
+def checkMotor():
     for x in range(5):
         fwd()
     while True:
         v = volt()
         print v
+

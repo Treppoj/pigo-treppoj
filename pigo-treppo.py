@@ -58,6 +58,19 @@ class Pigo:
     ######## ADVANCED STATUS AND METHODS ########
     ########                             ########
 
+        def safeDrive(self):
+            self.fwd()
+            while self.keepGoing():
+                self.checkDist()
+            self.stop()
+
+
+        def servoSweep(self):
+            for ang in range(20, 160, 5):
+                servo(ang)
+                time.sleep(.1)
+
+
     def dance(self):
         print "Yo G, I just wanna DANCE!"
         if self.keepGoing():
