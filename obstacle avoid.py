@@ -52,7 +52,6 @@ class Pigo:
 
     def safeDrive(self):
         self.fwd()
-        while self.quickCheck()
 
     def servoSweep(self):
 
