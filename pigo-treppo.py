@@ -86,7 +86,7 @@ class Pigo:
 
 
 brover = Pigo()
-while tina.keepGoing():
+while brover.keepGoing():
     brover.fwd()
     time.sleep(2)
     brover.stop()
